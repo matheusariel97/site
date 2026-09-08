@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import matheusPhoto from "@assets/matheus-ariel.jpg.asset.json";
-import matheusSobrePhoto from "@assets/matheus-ariel-sobre.jpg.asset.json";
+import matheusPhoto from "@assets/matheus-ariel.jpg";
+import matheusSobrePhoto from "@assets/matheus-ariel-sobre.jpg.asset";
 
 export const Route = createFileRoute("/")({
   head: () => ({
