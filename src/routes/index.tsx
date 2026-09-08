@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import matheusPhoto from "@assets/matheus-ariel.jpg";
-import matheusSobrePhoto from "@assets/matheus-ariel-sobre.jpg";
+import matheusPhoto from "@/assets/matheus-ariel.jpg";
+import matheusSobrePhoto from "@/assets/matheus-ariel-sobre.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -99,9 +99,8 @@ function Hero() {
               Um espaço para compreender seus comportamentos, emoções e escolhas.
             </h1>
             <p className="text-xl md:text-2xl text-navy-deep/60 leading-relaxed mb-14 max-w-2xl font-light">
-              Atendimento psicológico clínico pautado em Análise do Comportamento e
-              Terapias Contextuais, com escuta cuidadosa e respeito ao tempo de cada
-              pessoa.
+              Atendimento psicológico clínico pautado em Análise do Comportamento e Terapias
+              Contextuais, com escuta cuidadosa e respeito ao tempo de cada pessoa.
             </p>
             <div className="flex flex-wrap items-center gap-6">
               <a
@@ -144,7 +143,7 @@ function Hero() {
               src={matheusSobrePhoto}
               alt="Matheus Ariel — Psicólogo Clínico"
               className="photo-cinematic absolute inset-0 h-full w-full object-top"
-/>
+            />
             <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/30 to-transparent" />
             <div className="absolute inset-0 pointer-events-none shadow-[inset_-2px_0_60px_rgba(248,245,240,0.12)]" />
 
@@ -175,7 +174,7 @@ function Sobre() {
         <div className="grid items-center gap-20 lg:grid-cols-[1fr_1.2fr]">
           <div className="relative aspect-[4/5] overflow-hidden bg-navy-deep">
             <img
-              ssrc={matheusSobrePhoto}
+              src={matheusSobrePhoto}
               alt="Matheus Ariel — Psicólogo Clínico"
               className="photo-cinematic h-full w-full"
             />
@@ -189,20 +188,18 @@ function Sobre() {
             </h2>
             <div className="space-y-8 text-xl md:text-2xl leading-relaxed text-navy-light font-light">
               <p>
-                Sou Matheus Ariel, psicólogo clínico (CRP 24/06291), e meu trabalho é
-                ajudar pessoas a compreenderem seus comportamentos, emoções e padrões
-                de vida por meio de intervenções fundamentadas em evidências
-                científicas.
+                Sou Matheus Ariel, psicólogo clínico (CRP 24/06291), e meu trabalho é ajudar pessoas
+                a compreenderem seus comportamentos, emoções e padrões de vida por meio de
+                intervenções fundamentadas em evidências científicas.
               </p>
               <p>
-                O processo terapêutico é construído em conjunto, respeitando a
-                história, o contexto e os valores de cada pessoa. Não existe um
-                caminho único: existe um percurso possível, discutido de forma clara
-                e transparente ao longo do acompanhamento.
+                O processo terapêutico é construído em conjunto, respeitando a história, o contexto
+                e os valores de cada pessoa. Não existe um caminho único: existe um percurso
+                possível, discutido de forma clara e transparente ao longo do acompanhamento.
               </p>
               <p>
-                O atendimento é conduzido de acordo com o Código de Ética Profissional
-                do Psicólogo (CFP), com sigilo e responsabilidade técnica.
+                O atendimento é conduzido de acordo com o Código de Ética Profissional do Psicólogo
+                (CFP), com sigilo e responsabilidade técnica.
               </p>
             </div>
           </div>
@@ -247,8 +244,8 @@ function Contato() {
             Se desejar, podemos conversar sobre o atendimento.
           </h2>
           <p className="text-xl md:text-2xl text-navy-light leading-relaxed mb-14 font-light">
-            Entre em contato pelo WhatsApp ou Instagram para tirar dúvidas ou agendar
-            uma conversa inicial.
+            Entre em contato pelo WhatsApp ou Instagram para tirar dúvidas ou agendar uma conversa
+            inicial.
           </p>
           <div className="flex flex-wrap items-center gap-5">
             <a
@@ -296,9 +293,7 @@ function Footer() {
         <div className="grid gap-16 md:grid-cols-2">
           <div>
             <p className="font-display text-3xl text-cream">Matheus Ariel</p>
-            <p className="crp-line-light mt-3">
-              Psicólogo Clínico • CRP 24/06291
-            </p>
+            <p className="crp-line-light mt-3">Psicólogo Clínico • CRP 24/06291</p>
             <p className="mt-6 text-base text-cream/50 font-light leading-relaxed">
               Análise do Comportamento
               <br />
