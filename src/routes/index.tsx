@@ -141,10 +141,10 @@ function Hero() {
 
           <div className="flex-1 relative min-h-[560px] lg:min-h-[90vh] overflow-hidden">
             <img
-              src={matheusPhoto.url}
-              alt="Matheus Ariel — Psicólogo Clínico"
-              className="photo-cinematic absolute inset-0 h-full w-full object-top"
-            />
+              src={matheusPhoto}
+  alt="Matheus Ariel — Psicólogo Clínico"
+  className="photo-cinematic absolute inset-0 h-full w-full object-top"
+/>
             <div className="absolute inset-0 bg-gradient-to-r from-cream via-cream/30 to-transparent" />
             <div className="absolute inset-0 pointer-events-none shadow-[inset_-2px_0_60px_rgba(248,245,240,0.12)]" />
 
@@ -175,9 +175,9 @@ function Sobre() {
         <div className="grid items-center gap-20 lg:grid-cols-[1fr_1.2fr]">
           <div className="relative aspect-[4/5] overflow-hidden bg-navy-deep">
             <img
-              src={matheusSobrePhoto.url}
-              alt="Matheus Ariel — Psicólogo Clínico"
-              className="photo-cinematic h-full w-full"
+              ssrc={matheusSobrePhoto}
+  alt="Matheus Ariel — Psicólogo Clínico"
+  className="photo-cinematic h-full w-full"
             />
           </div>
           <div>
