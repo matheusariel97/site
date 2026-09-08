@@ -1,20 +1,19 @@
 import { createFileRoute } from "@tanstack/react-router";
-import matheusPhoto from "@/assets/matheus-ariel.jpg.asset.json";
-import matheusSobrePhoto from "@/assets/matheus-ariel-sobre.jpg.asset.json";
-
+import matheusPhoto from "@assets/matheus-ariel.jpg.asset.json";
+import matheusSobrePhoto from "@assets/matheus-ariel-sobre.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Matheus Ariel | Psicólogo Clínico — CRP 24/06291" },
+      { title: "Matheus Ariel | Psicólogo Clínico - CRP 24/06291" },
       {
         name: "description",
         content:
-          "Matheus Ariel, psicólogo clínico (CRP 24/06291). Atendimento em Análise do Comportamento e Terapias Contextuais, com intervenções fundamentadas em evidências científicas.",
+          "Matheus Ariel, psicólogo clínico (CRP 24/06291). Atendimento em Análise do Comportamento e Terapias",
       },
       {
         property: "og:title",
-        content: "Matheus Ariel | Psicólogo Clínico — CRP 24/06291",
+        content: "Matheus Ariel | Psicólogo Clínico - CRP 24/06291",
       },
       {
         property: "og:description",
