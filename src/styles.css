@@ -1,0 +1,150 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-navy-light: var(--navy-light);
+  --color-navy-accent: var(--navy-accent);
+  --color-cream: var(--cream);
+  --color-warm: var(--warm);
+
+  --font-display: "Libre Baskerville", Georgia, serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.5rem;
+
+  --background: #f8f5f0;
+  --foreground: #0a1128;
+
+  --card: #ffffff;
+  --card-foreground: #0a1128;
+
+  --popover: #ffffff;
+  --popover-foreground: #0a1128;
+
+  --primary: #0a1128;
+  --primary-foreground: #f8f5f0;
+
+  --secondary: #ede8e0;
+  --secondary-foreground: #0a1128;
+
+  --muted: #ede8e0;
+  --muted-foreground: #6b7a8d;
+
+  --accent: #3b6fa0;
+  --accent-foreground: #f8f5f0;
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0.01 95);
+
+  --border: rgba(10, 17, 40, 0.12);
+  --input: rgba(10, 17, 40, 0.15);
+  --ring: #3b6fa0;
+
+  --navy: #0f1b3d;
+  --navy-deep: #0a1128;
+  --navy-light: #1e3a5f;
+  --navy-accent: #3b6fa0;
+  --cream: #f8f5f0;
+  --warm: #f0ebe3;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@utility crp-line {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+@utility crp-line-light {
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(10, 17, 40, 0.55);
+}
+
+@utility photo-premium {
+  filter: grayscale(100%) contrast(1.05) brightness(1.02);
+  object-fit: cover;
+}
+
+@utility photo-cinematic {
+  filter: grayscale(100%) contrast(1.08) brightness(0.95);
+  object-fit: cover;
+}
+
+@utility glass-card {
+  background: rgba(248, 245, 240, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(10, 17, 40, 0.1);
+}
+
+@utility glow-blue {
+  background: rgba(59, 111, 160, 0.1);
+  filter: blur(120px);
+  border-radius: 9999px;
+}
+
+@utility glow-indigo {
+  background: rgba(99, 102, 241, 0.08);
+  filter: blur(150px);
+  border-radius: 9999px;
+}
